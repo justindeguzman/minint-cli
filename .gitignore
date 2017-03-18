@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log*
+.DS_Store
+app/public/build/
+backups/
+**/build/
+bundle.js
+build/
+tmp/
