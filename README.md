@@ -1,6 +1,6 @@
 # minint-cli
 
-minint-cli allows you to easily test microservices built on top of AWS Lambda and API Gateway. See [minint.com](http://minint.com).
+minint-cli allows you to easily run microservices built on top of AWS Lambda and API Gateway on your local machine. You can then manage these microservices using [minint.com](http://minint.com) and manage access to your microservices, view logs, read automatically generated docs, and more.
 
 ## Installation
 
