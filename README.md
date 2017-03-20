@@ -144,7 +144,7 @@ Each Lambda is associated with its own `function.json`. Settings specified in `f
 
 ### Authorizers
 
-Authorizers control access to your Lambda functions. They look similar to the Lambda functions in the `functions/` folder but are located in the `authorizers/` folder. The status code returned by the authorizer determines if authorization is successful. Returning an error (4XX or 5XX status codes) will result in a failed authorization.
+Authorizers control access to your Lambda functions. They look similar to the Lambda functions in the `functions/` folder but are located in the `authorizers/` folder. The status code returned by the authorizer determines if authorization is successful. Returning an error (4XX or 5XX status codes) will result in a failed authorization, while returning a 2XX status code results in a successful authorization.
 
 ```js
 import db from '../../lib'
