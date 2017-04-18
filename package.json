@@ -1,6 +1,6 @@
 {
   "name": "minint-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cli for Minint",
   "main": "index.js",
   "scripts": {
