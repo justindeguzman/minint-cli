@@ -16,6 +16,9 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.3.13"
   },
+  "bin": {
+    "minint": "./bin/index.js"
+  },
   "dependencies": {
     "chokidar": "^1.6.1",
     "cli-table2": "^0.2.0",
