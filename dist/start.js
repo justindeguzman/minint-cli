@@ -45,6 +45,8 @@ var _fs = require('fs');
 
 var _fs2 = _interopRequireDefault(_fs);
 
+var _child_process = require('child_process');
+
 var _koa = require('koa');
 
 var _koa2 = _interopRequireDefault(_koa);
@@ -117,6 +119,10 @@ function main() {
   var tmp = _path2.default.resolve(__dirname, '../tmp/' + repoDir);
   _fsExtra2.default.removeSync(tmp);
   _fsExtra2.default.copySync(functionDir, tmp);
+
+  var babel = _path2.default.resolve(__dirname, '../node_modules/babel-cli/bin/babel.js').replace(/ /g, '\\ ');
+  var flags = '--ignore node_modules,test --out-dir ';
+  (0, _child_process.execSync)(babel + ' ' + functionDir.replace(/ /g, '\\ ') + ' ' + flags + ' ' + tmp.replace(/ /g, '\\ '));
 
   // Get service info
   var service = getService(tmp);
