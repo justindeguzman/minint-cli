@@ -121,7 +121,7 @@ function main() {
   _fsExtra2.default.copySync(functionDir, tmp);
 
   var babel = _path2.default.resolve(__dirname, '../node_modules/babel-cli/bin/babel.js').replace(/ /g, '\\ ');
-  var flags = '--ignore node_modules,test --out-dir ';
+  var flags = '--ignore /node_modules/,/test/ --out-dir ';
   (0, _child_process.execSync)(babel + ' ' + functionDir.replace(/ /g, '\\ ') + ' ' + flags + ' ' + tmp.replace(/ /g, '\\ '));
 
   // Get service info
